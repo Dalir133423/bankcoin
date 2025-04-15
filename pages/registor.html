@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/fonts.css">
+    <title>Регистрация</title>
+    <link rel="icon" href="../img/favicon.svg">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-registor.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body style="background: #F8F9FF;">
     <div class="bg-registor">
         <header class="header">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col col-3">
-                        <img src="../img/header-logo.svg" alt="" class="header-logo">
+                <div class="header-row">
+                    <a href=""><img src="../img/header-logo.svg" alt=""></a>
+                    <nav class="header-nav">
+                        <a href="./index.html">Главная</a>
+                        <a href="./index.html#strategeis">Стратегии</a>
+                        <a href="./index.html#faq">FAQ</a>
+                        <a href="./index.html#home-form">Связаться с нами</a>
+                    </nav>
+                    <div class="header-button">
+                        <a href="../pages/login.html"><button>Вход</button></a>
+                        <a href="../pages/registor.html"><button>Регистрация</button></a>
                     </div>
-                    <div class="col col-5">
-                        <nav class="header-nav row justify-content-between">
-                            <a href="">Главная</a>
-                            <a href="">Стратегии</a>
-                            <a href="">FAQ</a>
-                            <a href="">Связаться с нами</a>
-                        </nav>
-                    </div>
-                    <div class="col col-4 header-button">
-                        <button class="home-button">Вход</button>
-                        <button class="home-button">Регистрация</button>
+                    <div class="col-lg-6 mn-header">
+                        <div class="menu">
+                            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                            <label for="burger-checkbox" class="burger"></label>
+                            <ul class="menu-list">
+                                <li><a href="./index.html" class="menu-item">Главная</a><li>
+                                <li><a href="./index.html#strategeis" class="menu-item">Стратегии</a><li>
+                                <li><a href="./index.html#faq" class="menu-item">FAQ</a><li>
+                                <li><a href="./index.html#home-form" class="menu-item">Связаться с нами</a><li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,72 +44,67 @@
     <div class="container register-container">
         <h2>Регистрация</h2>
        <div class="register-column">
-            <div class="row-register">
-                <div class="row-register-item">
+            <div class="sigh-up-row space-berween-xl">
+                <div class="col-sigh-up col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <span>Основной адрес электронный почты</span>
                     <input type="email" placeholder="Email">
                 </div>
-                <div class="row-register-item">
-                    <span>Введите новый пароль</span>
+                <div class="col-sigh-up col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <span>Введите пароль</span>
                     <input type="password" placeholder="Пароль">
                 </div>
-                <div class="row-register-item">
+                <div class="col-sigh-up col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <span>Повторите пароль</span>
                     <input type="password" placeholder="Пароль">
                 </div>
-            </div>
-            <div class="row-register">
-                <div class="row-register-item">
+                <div class="col-sigh-up col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <span>Ваше полное имя</span>
                     <input type="text" placeholder="ФИО">
                 </div>
             </div>
-            <div class="register-test">
-                <span class="span-invayd">Ваш пригласитель</span>
-                <div class="row-register">
-                    <div class="row-register-item">
-                        <input type="text" placeholder="ID пригласителя">
-                    </div>
-                    <div class="row-register-item">
-                        <button class="register-button">Зарегистрироваться</button>
-                    </div>
-                    <div class="row-register-item ">
-                        <label for="" class="register-label">
-                            <input type="checkbox" class="register-checkbox">
-                            <span>Я согласен <b>с условиями использования  BitGartBot</b></span>
-                        </label>
-                    </div>
+            <div class="sigh-up-group">
+                <div class="col-sigh-up col-lg-6 col-md-12 col-sm-12">
+                    <span>Ваш пригласитель</span>
+                    <input type="text" placeholder="ID пригласитиля" class="sigh-up-margin">
+                </div>
+                <div class="col-sigh-up col-lg-6 col-md-12 col-sm-12">
+                    <button class="checkbox-sigh-up">Зарегистрироватся</button>
+                </div>
+                <div class="col-sigh-up col-lg-6 col-md-12 col-sigh-up-checkbox col-sm-12">
+                    <input type="checkbox" class="" id="test-sigh-up">
+                    <label class="form-sigh-label" for="test-sigh-up">Я согласен на <a href="">обработку персональных данных</a></label> 
                 </div>
             </div>
        </div>
-       <span class="span-have-ac">Уже есть аккаунт?<button>Войти</button></span>
+       <span class="span-have-ac">Уже есть аккаунт?<a href="./login.html"><button>Войти</button></a></span>
     </div>
     <div class="footer">
         <div class="container">
-            <img src="img/header-logo.svg" alt="" class="logo-footer">
+            <img src="../img/header-logo.svg" alt="" class="logo-footer">
             <div class="footer-row align-items-center">
-                <div class="footer-row-item">
-                    <a href="">Главная</a>
-                    <a href="">Стратегии</a>
-                    <a href="">FAQ</a>
-                    <a href="">Связаться с нами</a>
+                <div class="footer-row-item footer-row-item--1">
+                    <a href="./index.html">Главная</a>
+                    <a href="./index.html#strategeis">Стратегии</a>
+                    <a href="./index.html#faq">FAQ</a>
+                    <a href="./index.html#home-form">Связаться с нами</a>
                 </div>
-                <div class="footer-row-item">
-                    <span>Лицензионное соглашение</span>
-                    <b>Политика конфедициальности</b>
+                <div class="footer-row-item footer-row-item--2">
+                    <div class="social-row">
+                        <a href=""><img src="../img/social-icons.svg" alt=""></a>
+                        <a href=""><img src="../img/social-icons.svg" alt=""></a>
+                        <a href=""><img src="../img/social-icons.svg" alt=""></a>
+                        <a href=""><img src="../img/social-icons.svg" alt=""></a>
+                    </div>
+                    <div class="social-row-text">
+                        <a href="">Лицензионное соглашение</a>
+                        <a href="">Политика конфедициальности</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="row justify-content-between">
-                    <div class="col col-6">
+                <div class="row justify-content-between align-items-center-sm">
+                    <div class="col col-12">
                         <span>© 2020 All rights reserved</span>
-                    </div>
-                    <div class="col col-6">
-                        <div class="social-row">
-                            <a href=""><img src="img/social-icons.svg" alt=""></a>
-                            <a href=""><img src="img/social-icons.svg" alt=""></a>
-                            <a href=""><img src="img/social-icons.svg" alt=""></a>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,523 @@
+@media (max-width:1199px) {
+    .col-xl {
+        padding: 0 16px;
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+
+    .col-xl-2 {
+        width: 16.66%; 
+    }
+
+    .col-xl-3 {
+        width: 25%; 
+    }
+
+    .col-xl-3_5 {
+        width: 30%;
+    }
+
+    .col-xl-4 {
+        width: 33.33%; 
+    }
+
+    .col-xl-5 {
+        width: 41.66%; 
+    }
+
+    .col-xl-6 {
+        width: 50%;
+    }
+
+    .col-xl-7 {
+        width: 58.33%; 
+    }
+
+    .col-xl-8 {
+        width: 66.66%; 
+    }
+
+    .col-xl-9 {
+        width: 75%; 
+    }
+
+    .col-xl-10 {
+        width: 83.33%; 
+    }
+
+    .col-xl-11 {
+        width: 91.66%; 
+    }
+
+    .col-xl-12 {
+        width: 100%; 
+    }
+
+    .align-items-center-xl {
+        align-items: center;
+    }
+
+    .align-items-end {
+        align-items: end;
+    }
+
+    .space-center-xl {
+        justify-content: center;
+    }
+
+    .space-start-xl {
+        justify-content: start;
+    }
+
+    .space-berween-xl {
+        justify-content: space-between;
+    }
+
+    .space-around-xl {
+        justify-content: space-around;
+    }
+
+    .row-register-item span {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .row-register {
+        justify-content: space-between;
+    }
+
+    .span-invayd {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .register-label span b {
+        font-size: 12px;
+        display: block;
+    }
+
+    .footer-row {
+        gap: 0;
+    }
+
+    .footer-row-item span, .footer-row-item b {
+        display: block;
+    }
+
+    .col-sigh-up-checkbox {
+        padding: 0;
+    }
+
+    .col-sigh-up label {
+        padding-left: 4px;
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .col-lg {
+        padding: 0 16px;
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+    
+    .col-lg-2 {
+        width: 16.66%; 
+    }
+    
+    .col-lg-3 {
+        width: 25%; 
+    }
+
+    .col-lg-3_5 {
+        width: 30%;
+    }
+    
+    .col-lg-4 {
+        width: 33.33%; 
+    }
+    
+    .col-lg-5 {
+        width: 41.66%; 
+    }
+    
+    .col-lg-6 {
+        width: 50%;
+    }
+    
+    .col-lg-7 {
+        width: 58.33%; 
+    }
+    
+    .col-lg-8 {
+        width: 66.66%; 
+    }
+    
+    .col-lg-9 {
+        width: 75%; 
+    }
+    
+    .col-lg-10 {
+        width: 83.33%; 
+    }
+    
+    .col-lg-11 {
+        width: 91.66%; 
+    }
+    
+    .col-lg-12 {
+        width: 100%; 
+    }
+    
+    .header-nav-pc {
+        display: none;
+    }
+
+    .mn-header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 30px;
+        gap: 10px;
+    }
+
+    .header-button, .header-col-5 {
+        display: none;
+    }
+
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .burger {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+        z-index: 200 !important;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: #000;
+    }
+
+    .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 #000;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+
+    .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+    }
+
+    .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0,0,0,0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+
+    .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+    }
+
+    .menu-list {
+        top: 0;
+        right: 0;
+        position: fixed;
+        display: grid;
+        gap: 12px;
+        padding: 42px 0;
+        margin: 0;
+        z-index: 10;
+        background: orange;
+        list-style-type: none;
+        transform: translateX(100%);
+        transition: .3s;
+        width: 200px;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 8px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item:hover {
+        background: rgba(255,255,255,.2);
+    }
+
+    .burger-checkbox:checked ~ .menu-list {
+        transform: translateX(0);
+    }
+
+    .row-register-bottom {
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+
+    .register-label span b {
+        display: inline;
+    }
+
+    .sigh-up-group {
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+
+    .register-container {
+        margin-bottom: 0;
+    }
+
+    
+}
+
+@media (max-width:767px) {
+    .col-md {
+        padding: 0 16px;
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+    
+    .col-md-2 {
+        width: 16.66%; 
+    }
+    
+    .col-md-3 {
+        width: 25%; 
+    }
+    
+    .col-md-4 {
+        width: 33.33%; 
+    }
+    
+    .col-md-5 {
+        width: 41.66%; 
+    }
+    
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .col-md-7 {
+        width: 58.33%; 
+    }
+    
+    .col-md-8 {
+        width: 66.66%; 
+    }
+    
+    .col-md-9 {
+        width: 75%; 
+    }
+    
+    .col-md-10 {
+        width: 83.33%; 
+    }
+    
+    .col-md-11 {
+        width: 91.66%; 
+    }
+    
+    .col-md-12 {
+        width: 100%; 
+    }
+
+    .row-register {
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+
+    .register-container {
+        padding: 40px 16px;
+    }
+
+    .footer-row-item-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-row  {
+        align-items: end;
+    }
+
+    .sigh-up-group, .sigh-up-row {
+        justify-content: center;    
+    }
+
+    .col-sigh-up-checkbox {
+        padding: 0 13px;
+    }
+}
+
+@media (max-width: 575px) {
+    .col-sm {
+        padding: 0 16px;
+        flex: 0 0 auto;
+        width: 8.33%;
+    }
+    
+    .col-sm-2 {
+        width: 16.66%; 
+    }
+    
+    .col-sm-3 {
+        width: 25%; 
+    }
+    
+    .col-sm-4 {
+        width: 33.33%; 
+    }
+    
+    .col-sm-5 {
+        width: 41.66%; 
+    }
+    
+    .col-sm-6 {
+        width: 50%;
+    }
+    
+    .col-sm-7 {
+        width: 58.33%; 
+    }
+    
+    .col-sm-8 {
+        width: 66.66%; 
+    }
+    
+    .col-sm-9 {
+        width: 75%; 
+    }
+    
+    .col-sm-10 {
+        width: 83.33%; 
+    }
+    
+    .col-sm-11 {
+        width: 91.66%; 
+    }
+    
+    .col-sm-12 {
+        width: 100%; 
+    }
+
+    .header-logo {
+        width: 140px;
+    }
+
+    .row-register{
+        display: flex;
+        justify-content: center;
+        /* text-align: center; */
+    }
+
+    .mn-header {
+        padding: 0;
+    }
+
+    .justify-center-sm {
+        justify-content: center;
+    }
+
+    .footer-row-item--2 {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .social-row-text {
+        text-align: start;
+    }
+
+    .footer-row {
+        gap: 0;
+    }
+
+    .footer-bottom span {
+        text-align: start;
+    }
+
+    .sigh-up-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-sigh-up label {
+        font-size: 11px;
+        padding-left: 2px;
+    }
+
+    #test-sigh-up {
+        width: 15px;
+        height: 15px;
+    }
+
+    .sigh-up-margin {
+        margin-bottom: 15px;
+    }
+
+    #test-sigh-up::after {
+        font-size: 11px;
+    }
+
+    .register-container {
+        padding-bottom: 20px;
+    }
+
+    .register-column {
+        margin-bottom: 0;
+    }
+
+    .register-container {
+        margin-bottom: 50px;
+    }
+
+    .col-sigh-up span {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .col-sigh-up button {
+        margin-bottom: 10px;
+    }
+
+    .register-container {
+        padding: 40px 0;
+    }
+
+    .header-row a img {
+        width: 100%;
+    }
+
+    .footer-row-item--1 {
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .logo-footer {
+        margin-bottom: 25px;
+    }
+}
+

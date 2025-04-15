@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/fonts.css">
+    <title>Профиль</title>
+    <link rel="icon" href="../img/favicon.svg">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-profile.css">
 </head>
 <body style=" background: #303047;">
     <div class="header header-2">
         <div class="container">
             <div class="row">
-                <div class="col col-6">
-                    <img src="../img/header-logo.svg" alt="">
+                <div class="col col-6 col-sm-5 col-sm-5">
+                    <img src="../img/header-logo.svg" alt="" class="header-logo--mb">
                 </div>
-                <div class="col col-6 header-2-row">
+                <div class="col col-6 header-2-row col-sm-7">
                     <a href=""><img src="../img/cog.svg" alt=""></a>
-                    <a href=""><img src="../img/cog.svg" alt=""></a>
-                    <a href=""><img src="../img/cog.svg" alt=""></a>
+                    <a href=""><img src="../img/icoooon---1.svg" alt=""></a>
+                    <a href=""><img src="../img/icooooon---2.svg" alt=""></a>
                     <span>Выход</span>
+                    <div class="col col-lg-3 mn-header menu-item--2 col-sm-2">
+                        <div class="menu menu-2">
+                            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                            <label for="burger-checkbox" class="burger"></label>
+                            <ul class="menu-list">
+                                <li><a href="./basket.html" class="menu-item">Кабинет</a><li>
+                                <li><a href="./profile.html" class="menu-item">Профиль</a><li>
+                                <li><a href="./transition.html" class="menu-item">Транзакции</a><li>
+                                <li><a href="./conclusion.html" class="menu-item">Вывод средств</a><li>
+                                <li><a href="./comand.html" class="menu-item">Команда</a></li>
+                                <li><a href="./instructions.html" class="menu-item">Инструкции</a></li>
+                                <li><a class="menu-item">Выход</a></li>
+                            </ul>
+                        </div>                    
+                    </div> 
                 </div>
             </div>
         </div>
@@ -26,50 +42,53 @@
     <div class="home-menu">
         <div class="container">
             <div class="home-menu-row row">
-                <div class="col col-2">
-                    <button class="home-menu-button">Кабинет</button>
+                <div class="col col-2 col-md-3_5">
+                    <a href="./basket.html"><button class="home-menu-button">Кабинет</button></a>
                 </div>
-                <div class="col col-2">
-                    <button class="home-menu-button">Профиль</button>
+                <div class="col col-2 col-md-3_5">
+                    <a href="./profile.html"><button class="home-menu-button">Профиль</button></a>
                 </div>
-                <div class="col col-2">
-                    <button class="home-menu-button">Транзакции</button>
+                <div class="col col-2 col-md-3_5">
+                    <a href="./transition.html"><button class="home-menu-button">Транзакции</button></a>
                 </div>
-                <div class="col col-2">
-                    <button class="home-menu-button">Вывод средств</button>
+                <div class="col col-2 col-md-3_5">
+                    <a href="./conclusion.html"><button class="home-menu-button">Вывод средств</button></a>
                 </div>
-                <div class="col col-2">
-                    <button class="home-menu-button">Команда</button>
+                <div class="col col-2 col-md-3_5">
+                    <a href="./comand.html"><button class="home-menu-button">Команда</button></a>
                 </div>
-                <div class="col col-2">
-                    <button class="home-menu-button">Инструкции</button>
+                <div class="col col-2 col-md-3_5">
+                    <a href="./instructions.html"><button class="home-menu-button">Инструкции</button></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="home-profile">
         <div class="container">
+          <div class="bg-profile">
             <h3>Личные данные</h3>
-            <div class="row home-profile-row">
-                <div class="col col-8">
+            <div class="row home-profile-row"> 
+                <div class="col col-8 col-lg-7 col-md-6 col-sm-12">
                     <div class="row row-fio">
-                        <div class="col col-4">
+                        <div class="col col-4 col-lg-10 col-md-12">
                             <input type="text" placeholder="Имя">
                         </div>
-                        <div class="col col-4">
-                            <input type="text" placeholder="Имя">
+                        <div class="col col-4 col-lg-10 col-md-12">
+                            <input type="text" placeholder="Фамилия">
                         </div> 
-                         <div class="col col-4">
-                            <input type="text" placeholder="Имя">
+                         <div class="col col-4 col-lg-10 col-md-12">
+                            <input type="text" placeholder="Отчество(Если Есть)">
                         </div>
                     </div>
                     <div class="row data-row">
-                        <div class="col col-4">
-                            <input type="date" placeholder="Дата рождения">
+                        <div class="col col-4 col-lg-10 col-md-12">
+                            <label for="date" class="data-label">
+                                <input type="date" id="date" placeholder="Дата рождения" class="custom-date">
+                            </label>
                         </div>
                     </div>
                     <div class="row select-row">
-                       <div class="col col-4">
+                       <div class="col col-4 col-lg-10 col-md-12">
                             <div class="home-profile-select">
                                 <select name="" id="">  
                                     <option value="AW">Страна</option>
@@ -325,10 +344,10 @@
                                 </select>
                             </div>
                        </div>
-                       <div class="col col-4">
+                       <div class="col col-4 col-lg-10 col-md-12">
                             <div class="home-profile-select">
                                 <select name="" id="">  
-                                    <option value="AW">Страна</option>
+                                    <option value="AW">Область</option>
                                     <option value="AW">Aruba</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="AO">Angola</option>
@@ -581,10 +600,10 @@
                                 </select>
                             </div>
                        </div>
-                       <div class="col col-4">
+                       <div class="col col-4 col-lg-10 col-md-12">
                         <div class="home-profile-select">
                             <select name="" id="">  
-                                <option value="AW">Страна</option>
+                                <option value="AW">Город</option>
                                 <option value="AW">Aruba</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AO">Angola</option>
@@ -838,17 +857,17 @@
                         </div>
                    </div>
                    </div>
-                    <div class="row">
-                        <div class="home-profile-telfon-item col col-6">
+                    <div class="row row-contacts">
+                        <div class="home-profile-telfon-item col col-6 col-lg-10 col-md-12">
                             <span>Контакты</span>
                             <input type="number" placeholder="Номер телефона">
                         </div>
-                        <div class="home-profile-telfon-item col col-6">
+                        <div class="home-profile-telfon-item col col-6 col-lg-10 col-md-12">
                             <input type="email" placeholder="Email">
                         </div>
                     </div>
                 </div>
-                <div class="col col-4">
+                <div class="col col-4 col-lg-5 col-md-6 col-sm-12">
                     <div class="column-social-input">
                         <div class="col col-12">
                             <img src="../img/telegram 1.svg" alt="">
@@ -876,45 +895,47 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
     </div>
     <div class="home-change">
         <div class="container">
-           <div class="row home-change-row">
-            <div class="col col-8 home-change-row-item">
+           <div class="row home-change-row column-reverse-md align-items-center">
+            <div class="col col-8 home-change-row-item col-md-11">
                 <div class="row home-change-header justify-content-center">
                     <span>Изменить пароль для входа в личный кабинет</span>
                 </div>
-                <div class="row home-change-pasword">
-                        <div class="col-6">
+                <div class="row home-change-pasword justify-content-between">
+                        <div class="col-6 col-sm-12">
                             <span>Старый пароль</span>
                             <div class="home-change-pasword-item">
-                                <input type="password" placeholder="" id="password" class="first-password">
+                                <input type="password" placeholder="" id="password" class="first-password password">
                                 <img src="../img/eyes.svg" alt="" onclick="togglePassword(this)" class="eye-open">
-                                <img src="../img/close-eye.svg" alt="" class="eye-closed" style="display: none;">
+                                <img src="../img/close-eye.svg" onclick="togglePassword(this)"  alt="" class="eye-closed" style="display: none;">
                             </div>
                             <span>Новый пароль</span>
                             <div class="home-change-pasword-item">
-                                <input type="password" placeholder="" id="password" class="">
+                                <input type="password" placeholder="" id="password" class="password">
                                 <img src="../img/eyes.svg" alt="" onclick="togglePassword(this)" class="eye-open">
-                                <img src="../img/close-eye.svg" alt="" class="eye-closed" style="display: none;">
+                                <img src="../img/close-eye.svg" onclick="togglePassword(this)"  alt="" class="eye-closed" style="display: none;">
                             </div>                            
                             <span>Повторите новый пароль</span>
                             <div class="home-change-pasword-item">
-                                <input type="password" placeholder="" id="password" class="last-password">
+                                <input type="password" placeholder="" id="password" class="last-password password">
                                 <img src="../img/eyes.svg" alt="" onclick="togglePassword(this)" class="eye-open eye-open-last">
-                                <img src="../img/close-eye.svg" alt="" class="eye-closed eye-open-last" style="display: none;">
-                            </div>                        </div>
-                        <div class="col-6">
+                                <img src="../img/close-eye.svg" onclick="togglePassword(this)" alt="" class="eye-closed eye-open-last" style="display: none;">
+                            </div>                        
+                        </div>
+                        <div class="col-5 col-sm-12 home-change-pasword-item--2">
                             <ul>
                                 <li>Ваш пароль должен содержать<br> не менее 7 символов</li>
-                                <li>Ваш пароль не должен состоятьь<br>только из цифр</li>
+                                <li>Ваш пароль не должен состоять<br>только из цифр</li>
                             </ul>
                             <button class="button home-change-pasword-button">Сохранить</button>
                         </div>
                 </div>
                 </div>
-            <div class="col col-4 home-change-pasword-info">
+            <div class="col col-4 home-change-pasword-info col-md-6">
                 <span>Предупреждение</span>
                 <p>
                     Настройки будут применены при следующем входе в личный кабинет.
@@ -923,23 +944,44 @@
                 </p>
                 <img src="../img/preduprejdenie.png" alt="">
             </div>
+            <div class="home-change-pasword-info-mb col-md-11">
+                <div class="home-change-pasword-info-mb-item col-12">
+                    <span>Предупреждение</span>
+                    <p>
+                        Настройки будут применены при следующем входе в личный кабинет.
+                        Все старые незащищённые сеансы (включая текущий) по-прежнему
+                        будут иметь доступ к вашему аккаунту с любого адреса 
+                    </p>
+                </div>
+            </div>
            </div>
         </div>
     </div>
     <script>
         function togglePassword(clickedIcon) {
         const wrapper = clickedIcon.parentElement;
-        const input = wrapper.querySelector('#password');
+        const input = wrapper.querySelector('.password');
         const openIcon = wrapper.querySelector('.eye-open');
         const closedIcon = wrapper.querySelector('.eye-closed');
 
-        const isPasswordHidden = input.type === "password";
-
-        input.type = isPasswordHidden ? "text" : "password";
-
-        openIcon.style.display = isPasswordHidden ? "none" : "block";
-        closedIcon.style.display = isPasswordHidden ? "block" : "none";
+        if (input.type === "text") {
+            
+            input.type = "password";
+            openIcon.style.display = "block";
+            closedIcon.style.display = "none";
+            input.style.background = "rgba(50, 185, 244, 0.03)"
+            input.style.color = "white"
+        } else {
+            input.type = "text";
+            openIcon.style.display = "none";
+            closedIcon.style.display = "block";
+            input.style.background = "white"
+            input.style.color = "black"
         }
+
+        console.log('Клик!', input.type);
+
+    }
 
     </script>
 </body>
